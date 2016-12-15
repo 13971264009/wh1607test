@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="js rgba opacity cssanimations borderradius boxshadow csstransitions csstransforms textshadow">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/index_js.js"></script>	
+
+</head>
+	<body>
+		<!-- 头部 -->
+<header class="g-hd" id="gTopbar">
+	<!-- 顶部导航 -->
+	<div id="j-siteNav" class="m-siteNav">
+		<div class="g-row">
+			<p class="declare">好的生活，没那么贵</p>
+			<div class="right">
+				<a class="login j-topLogin" href="login.html">登录</a>
+				<a class="register j-topRegister" href="">注册</a>
+				<div class="split"></div>
+				<a class="attitude">严选态度</a>
+				<div class="split"></div>
+				<a class="attitude">企业采购</a>
+				<div class="split"></div>
+				<div class="m-dropdown m-hdAppDownload">
+					<a class="trigger j-downloadlink"  >	
+						<span class="txt">下载APP</span>
+						<i class="icon w-icon-normal icon-normal-phone-app"></i>
+					</a>
+					<div class="bd ">
+						<div class="wrap ">
+							<div class="QRcode j-qrcode ">
+								<img src="./img/1.png"/>
+							</div>						
+							<span class="txt ">扫码下载 首单立减8元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="js-funcTabWrap " style="height: 204px; ">
+		<div id="js-funcTab" class="m-funcTab">
+			<div class="g-row ">
+				<a class="j-tab-logo tab-logo" title="网易严选 "></a>
+				<div class="tab-inner ">
+					<!-- 输入搜索框 -->
+						<div class="m-search ">
+							<a class="w-button-cart j-button-cart " >
+								<i class="w-icon-normal icon-normal-blackcart"></i>
+								<i class="w-icon-normal icon-normal-badge j-cart-num">0</i>
+							</a>
+							<div class="m-searchInput " id="j-search ">
+								<div class=" w-button-search j-searchButton " >
+									<i class="w-icon-normal icon-normal-search "></i>
+								</div>
+								<input id="topSearchInput" type="text" placeholder="膳魔师制造商保温杯仅3折 " class="w-searchInput j-searchInput " />
+				<div id="j-placeholderwarp "></div>
+				<div class="m-ppnl f-hide j-searchSuggest ">				
+					<div class="ppnl-ct js-ppnl-ct ">
+						<div class="js-ppnl-content ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- 菜单导航 -->
+						<ul class="tab-nav">
+		<li class="nav-item active first ">
+					<a class="topLevel " title="首页 " href=" index.html">首页</a>
+				</li>
+		<li class="j-nav-item nav-item ">
+					<a class="topLevel " href="listgood.html " title="居家 ">居家</a>
+					<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+						<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+							<ul class="card-list topnav1"></ul>
+						</div>
+					</div>
+				</li>
+		<li class="j-nav-item nav-item ">
+			<a class="topLevel ">餐厨</a>
+			<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+			<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+			<ul class="card-list topnav2"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">		
+		<a class="topLevel " href=" " title="配件 ">配件</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav3"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >服装</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav4"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " href="h " title="洗护 ">洗护</a>
+		<div class="j-nav-dropdown nav-dropdown ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav5"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >婴童</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav6"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >杂货</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav7"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel ">饮食</a>
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav8"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >其他</a>
+
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav9"></ul>
+				</div>
+			</div>
+		</li>
+			<li class="split fixed-hide "></li>
+			<li class="nav-item fixed-hide "><a class="topLevel " >专题</a></li>
+			<li class="nav-item fixed-hide last "><a class="topLevel " >甄选家</a></li>
+		</ul>
+					<!-- 购物车图标 -->
+					<a class="w-cart j-cart " >
+						<i class="w-icon-normal icon-normal-blackcart "></i>
+						<i class="w-icon-normal icon-normal-badge j-cart-num j-cart-num2 ">0</i>
+					</a>
+					
+				</div>
+					<div class="notLogin ">
+						<a class="login j-topLogin "href="login.html" >登录</a>
+						<a class="register j-topRegister" >注册</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</header>	
+<div class="g-bd">
+	<div class="m-bdbg">
+		<div class="g-row">
+		<div class="m-login-Page" style="display: block;">
+			<div class="m-header">
+				<div class="j-heading">
+					网易账号注册
+				</div>                     
+			</div>
+			<div class="loginmain">
+				<div class="username">
+					<div class="namet"></div>
+					<input type="text" class="inputlog" placeholder="手机账号" />
+					<div class="clearint"></div>					
+				</div>
+				<div class="userpass">
+					<div class="passt"></div>
+					<input type="password" class="llinputlog" placeholder="输入密码" />
+					<div class="clearint"></div>					
+				</div>
+				<div class="userpass">
+					<div class="passt"></div>
+					<input type="password" class="rellinputlog" placeholder="请确认密码" />
+					<div class="clearint"></div>					
+				</div>
+				<div class="username">
+					<input type="text" class="yanzhen" placeholder="验证码（区分大小写）" />
+					<div class="changeyzm"style="cursor: pointer;">abcd</div>					
+				</div>
+				<button class="submit"">注册&nbsp;提交</button>
+				<div class="repass">
+					
+					<a class="newnum" href="login.html">去登陆</a>
+				</div>
+				<div class="otheronload">
+					其他登陆方式
+				</div>
+				<img src="./img/otheronload.png"/>
+			</div>
+		</div> 							
+		</div>			
+	</div>
+</div>
+
+
+
+
+
+
+<footer class="g-ft "style="padding-top:0">
+<div class="m-ft2 ">
+<div class="g-row ">
+<ul class="m-siteEnsure ">
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft1 "></i><p class="text ">30天无忧退货</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft2 "></i><p class="text ">满88元免邮费</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft3 "></i><p class="text ">网易品质保证</p></div>
+</li>
+</ul>
+<hr>
+<div class="m-siteInfo ">
+<nav class="nav ">
+	<a class="text ">关于我们</a>
+	<b class="split ">|</b>
+	<a class="text " >帮助中心</a>
+	<b class="split ">|</b>
+	<a class="text " >售后服务</a>
+	<b class="split ">|</b>
+	<a class="text " >配送与验收</a>
+	<b class="split ">|</b>
+	<a class="text " >商务合作</a>
+	<b class="split ">|</b>
+	<a class="text " >企业采购</a>
+	<b class="split ">|</b>
+	<a class="text ">1元夺宝</a>
+</nav>
+<p class="copyright ">网易公司版权所有 © 1997-2016 &nbsp; 食品经营许可证：JY13301080111719</p>
+</div>
+</div>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="js/register.js"></script>
+</html>

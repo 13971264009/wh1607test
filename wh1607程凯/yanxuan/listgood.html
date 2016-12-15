@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="js rgba opacity cssanimations borderradius boxshadow csstransitions csstransforms textshadow">
+<head>
+	<meta  charset="UTF-8">
+	<title>列表页</title>	
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" href="./css/list.css" type="text/css">		
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/index_js.js"></script>
+</head>
+<body>
+<header class="g-hd" id="gTopbar">
+	<!-- 顶部导航 -->
+	<div id="j-siteNav" class="m-siteNav">
+		<div class="g-row">
+			<p class="declare">好的生活，没那么贵</p>
+			<div class="right">
+				<a class="login j-topLogin" href="login.html">登录</a>
+				<a class="register j-topRegister" href="">注册</a>
+				<div class="split"></div>
+				<a class="attitude">严选态度</a>
+				<div class="split"></div>
+				<a class="attitude">企业采购</a>
+				<div class="split"></div>
+				<div class="m-dropdown m-hdAppDownload">
+					<a class="trigger j-downloadlink"  >	
+						<span class="txt">下载APP</span>
+						<i class="icon w-icon-normal icon-normal-phone-app"></i>
+					</a>
+					<div class="bd ">
+						<div class="wrap ">
+							<div class="QRcode j-qrcode ">
+								<img src="./img/1.png"/>
+							</div>						
+							<span class="txt ">扫码下载 首单立减8元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="js-funcTabWrap " style="height: 204px; ">
+		<div id="js-funcTab" class="m-funcTab">
+			<div class="g-row ">
+				<a class="j-tab-logo tab-logo" title="网易严选 "></a>
+				<div class="tab-inner ">
+					<!-- 输入搜索框 -->
+						<div class="m-search ">
+							<a class="w-button-cart j-button-cart " >
+								<i class="w-icon-normal icon-normal-blackcart"></i>
+								<i class="w-icon-normal icon-normal-badge j-cart-num">0</i>
+							</a>
+							<div class="m-searchInput " id="j-search ">
+								<div class=" w-button-search j-searchButton " >
+									<i class="w-icon-normal icon-normal-search "></i>
+								</div>
+								<input id="topSearchInput" type="text" placeholder="膳魔师制造商保温杯仅3折 " class="w-searchInput j-searchInput " />
+				<div id="j-placeholderwarp "></div>
+				<div class="m-ppnl f-hide j-searchSuggest ">				
+					<div class="ppnl-ct js-ppnl-ct ">
+						<div class="js-ppnl-content ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- 菜单导航 -->
+						<ul class="tab-nav">
+		<li class="nav-item active first ">
+					<a class="topLevel " title="首页 " href="index.html">首页</a>
+				</li>
+		<li class="j-nav-item nav-item ">
+					<a class="topLevel " href="listgood.html" title="居家 ">居家</a>
+					<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+						<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+							<ul class="card-list topnav1"></ul>
+						</div>
+					</div>
+				</li>
+		<li class="j-nav-item nav-item ">
+			<a class="topLevel ">餐厨</a>
+			<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+			<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+			<ul class="card-list topnav2"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">		
+		<a class="topLevel " href=" " title="配件 ">配件</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav3"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >服装</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav4"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " href="h " title="洗护 ">洗护</a>
+		<div class="j-nav-dropdown nav-dropdown ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav5"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >婴童</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav6"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >杂货</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav7"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel ">饮食</a>
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav8"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >其他</a>
+
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav9"></ul>
+				</div>
+			</div>
+		</li>
+			<li class="split fixed-hide "></li>
+			<li class="nav-item fixed-hide "><a class="topLevel " >专题</a></li>
+			<li class="nav-item fixed-hide last "><a class="topLevel " >甄选家</a></li>
+		</ul>
+					<!-- 购物车图标 -->
+					<a class="w-cart j-cart " >
+						<i class="w-icon-normal icon-normal-blackcart "></i>
+						<i class="w-icon-normal icon-normal-badge j-cart-num j-cart-num2 ">0</i>
+					</a>
+					
+				</div>
+					<div class="notLogin ">
+						<a class="login j-topLogin "href="login.html" >登录</a>
+						<a class="register j-topRegister" >注册</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</header>	
+<!-- 重构部分 开始 -->
+<div class="g-bd f-bcf5">
+<div class="g-row f-bcf">
+<div class="m-crumbs ">
+<a>首页</a>
+<span class="w-icon w-icon-arrow"></span>
+<span class="z-cur">居家</span>
+</div>
+
+<div class="m-focus">
+<div class="focus-bd" >
+<div class="item">
+<a class="wrap" >
+
+<img src="./img/banner2.jpg" class="js-img"/>
+</a>
+</div>
+</div>
+</div>
+<div class="g-constraint">
+<div class="content">
+<div class="category">
+<span class="name">分类：</span>
+<a class="categoryItem j-categoryItem active" >全部</a>
+<a class="categoryItem j-categoryItem">被枕</a>
+<a class="categoryItem j-categoryItem">床品件套</a>
+<a class="categoryItem j-categoryItem">床垫</a>
+<a class="categoryItem j-categoryItem">地垫</a>
+<a class="categoryItem j-categoryItem">家具</a>
+<a class="categoryItem j-categoryItem">舒坐</a>
+<a class="categoryItem j-categoryItem">灯具</a>
+<a class="categoryItem j-categoryItem">家饰</a>
+<!-- 筛选条件 -->
+<div id="filterParams">
+<a  class="sortRule sortRule-onTime j-sort">上架时间<i id="Todown" class="w-icon-normal icon-normal-down-unchecked"></i></a>
+<a  class="sortRule sortRule-price j-sort" >价格<div class="icon">
+<i id="up" class="w-icon-normal icon-normal-up-search">
+</i>
+<i id="down" class="w-icon-normal icon-normal-down-search">
+</i>
+</div>
+</a>
+<a class="sortRule sortRule-default j-sort active">默认</a>
+</div>
+</div>
+</div>
+<div id="j-filterResult">
+<div class="m-items" >
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/2.png">
+<span class="name f-left">守护你的睡眠时光</span>
+</p>
+<p class="desc">填充物货真价实，选用优质材料，确保好芯</p>
+</header>
+<div class="bd">
+<ul class="list list1">
+
+</ul>
+</div>
+</div>
+<div class="m-items" >
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/3.png">
+<span class="name f-left">MUJI等品牌制造商出品</span>
+</p>
+<p class="desc">严格用料，亲肤舒适</p>
+</header>
+<div class="bd">
+<ul class="list list2">
+</ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/4.png">
+<span class="name f-left">承托你的好时光</span>
+</p>
+<p class="desc">助你拥有舒眠好梦</p>
+</header>
+<div class="bd">
+<ul class="list list3"></ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/5.png">
+<span class="name f-left">地毯，家里的第“五”面墙</span>
+</p>
+<p class="desc">天然好材料，手工制作，拒绝甲醛</p>
+</header>
+<div class="bd">
+<ul class="list list4"></ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/6.png">
+<span class="name f-left">原创设计，全实木匠心极造</span>
+</p>
+<p class="desc">一级原木，严苛工艺，还原家最初的模样</p>
+</header>
+<div class="bd">
+<ul class="list list5">
+</ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/7.png">
+<span class="name f-left">减缓久坐疲惫</span>
+</p>
+<p class="desc">
+居家办公两相宜
+</p>
+</header>
+<div class="bd">
+<ul class="list list6">
+</ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix">
+<img class="icon w-icon-44 f-left" src="./img/8.png">
+<span class="name f-left">一盏灯，温暖一个家</span>
+</p>
+<p class="desc">极简主义，贴近生活的设计</p>
+</header>
+<div class="bd">
+<ul class="list list7"></ul>
+</div>
+</div>
+<div class="m-items">
+<header class="hd">
+<p class="title f-clearfix"><img class="icon w-icon-44 f-left" src="./img/9.png"><span class="name f-left">装饰你的家，点缀美好生活</span></p>
+<p class="desc">品质在于细节</p>
+</header>
+<div class="bd">
+<ul class="list list8"></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="g-ft ">
+<div class="m-ft1 ">
+<div class="g-row ">
+<div class="item "><div class="m-serviceTel ">
+<h4 class="hd ">客服电话</h4>
+<p class="phone ">400-0368-163</p>
+<p class="datetime ">9:00-22:00</p>
+<a id="j-feedback " class="w-button btn feedbackBtn " href="javascript:; ">用户反馈</a>
+</div>
+</div>
+<div class="item ">
+<div class="m-whatIsYX ">
+<h4 class="hd ">何为严选</h4>
+<p class="desc ">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控...</p>
+<div class="m-followUs ">
+	<p class="title ">关注我们&nbsp;:</p>
+<div class="m-focusList ">
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-yixin "></i>
+		<div class="bd "><div class="wrap "><img src="./img/0a2.png " ></div></div>					
+	</div>
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-weixin "></i>
+		<div class="bd ">
+			<div class="wrap "><img src="./img/0a3.png " ></div>
+		</div>
+	</div>
+	<a class="f-left " ><i class="w-icon-normal icon-normal-weibo "></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="item "><div class="m-ftAppDownload ">
+<h4 class="hd ">扫码下载严选APP</h4>
+<div class="m-qrcode j-qrcode "><img src="./img/aa.png " /></div>
+<div class="tip ">首单立减8元</div>
+</div>
+</div>
+</div>
+</div>
+<div class="m-ft2 ">
+<div class="g-row ">
+<ul class="m-siteEnsure ">
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft1 "></i><p class="text ">30天无忧退货</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft2 "></i><p class="text ">满88元免邮费</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft3 "></i><p class="text ">网易品质保证</p></div>
+</li>
+</ul>
+<hr>
+<div class="m-siteInfo ">
+<nav class="nav ">
+	<a class="text ">关于我们</a>
+	<b class="split ">|</b>
+	<a class="text " >帮助中心</a>
+	<b class="split ">|</b>
+	<a class="text " >售后服务</a>
+	<b class="split ">|</b>
+	<a class="text " >配送与验收</a>
+	<b class="split ">|</b>
+	<a class="text " >商务合作</a>
+	<b class="split ">|</b>
+	<a class="text " >企业采购</a>
+	<b class="split ">|</b>
+	<a class="text ">1元夺宝</a>
+</nav>
+<p class="copyright ">网易公司版权所有 © 1997-2016 &nbsp; 食品经营许可证：JY13301080111719</p>
+</div>
+</div>
+</div>
+</footer>
+<!--固定点击-->
+<div id="js-fixedtool " class="m-fixedtool-newuser" style="right: 86.5px; display:block; ">
+	<a class="activityEntry j-fixedToolActivity " >
+		<img class="activityPic " src="./img/0a1.jpg ">
+	</a>
+	<a class="newuser  j-newuser" style="display:block;">
+		<i></i>
+		<p class="text ">新人有礼</p>
+	</a>
+	<a class="download j-downloadlink " >
+	<i></i>
+	<p class="text ">下载APP</p>
+	<div class="qrCode ">
+		<div class="img j-qrcode "></div>
+		<span class="text ">首单立减8元</span>
+	</div>
+	</a>
+	<div id="js-fixedtoolCustomerService " class="customerService ">
+		<i></i>
+		<p class="text ">在线客服</p>
+	</div>
+	<div id="js-fixedtoolGoTop " class="goTop ">
+		<i></i>
+		<p class="text ">回顶部</p>
+	</div>
+</div>
+</body></html>

@@ -1,0 +1,128 @@
+.m-bdbg {
+    width: 100%;
+    height: 600px;
+    background: url(../img/bg-3e7f5d5d04.jpg) center no-repeat;
+}
+.m-login-Page {
+    margin-top: 83px;
+    margin-left: 703px;
+    border: 1px solid #e8e8e8;
+    width: 386px;
+    padding: 0 40px;
+    background: #fff;
+    display: none;
+    min-height: 460px;
+   
+}
+.m-header {
+    position: relative;
+    padding: 30px 0;
+}
+.j-heading{
+    background: 0 0;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 18px;
+    margin: 0;
+    padding-left: 40px;
+    width: 100%;
+    height: auto;
+}
+.loginmain{
+	width: 300px;
+	height: 370px;
+}
+.username,.userpass{
+	width: 310px;
+	height: 40px;
+	margin-bottom:8px ;
+	position: relative;
+}
+input{
+	width: 310px;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 40px;
+	border: 1px solid #E8E8E8;
+}
+.namet{
+	width: 40px;
+	height:33px;
+	background:url(../img/namet.jpg) no-repeat;
+	position: absolute;
+	top: 1px;
+}
+.passt{
+	width: 40px;
+	height:33px;
+	background:url(../img/passt.jpg) no-repeat;
+	position: absolute;
+	top: 1px;
+}
+
+.inputlog,.username,.userpass,.namet,.passt{
+	display: inline-block;
+	float: left;
+	
+}
+.clearint{
+	width:40px ;
+	height: 36px;
+	background: #10880D;
+	float: right;
+	background: url(../img/clearint.png);
+	cursor: pointer;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+}
+.yanzhen{
+	width:170px;
+	height: 38px;
+	line-height: 36px;
+	padding-left:5px;
+	border: 1px solid #E8E8E8;
+	float:left;
+}
+/*.userpass .clearint{
+	float: right;
+}*/
+.changeyzm{
+	float:right;
+
+	width:100px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 28px;
+	border: 1px solid #E8E8E8;
+	text-align: center;
+	letter-spacing: 3px;
+	
+}
+.submit{
+	width:300px;
+	height: 48px;
+	background: #B4A078;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+.wjmm{
+	float:left;
+}
+.newnum{
+	float:right;
+}
+.repass{
+	float:left;
+	width:300px;
+	height: 28px;
+	margin-bottom:8px ;
+	margin-top:8px ;
+}
+.otheronload{
+	text-align: center;
+	cursor: default;
+}

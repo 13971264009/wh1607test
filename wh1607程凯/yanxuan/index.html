@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html class="js rgba opacity cssanimations borderradius boxshadow csstransitions csstransforms textshadow">
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/index.css" type="text/css">
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/index_js.js"></script>	
+	</head>
+	<body>
+		<!-- 头部 -->
+<header class="g-hd" id="gTopbar">
+	<!-- 顶部导航 -->
+	<div id="j-siteNav" class="m-siteNav">
+		<div class="g-row">
+			<p class="declare">好的生活，没那么贵</p>
+			<div class="right">
+				<a class="login j-topLogin" href="login.html">登录</a>
+				<a class="register j-topRegister" href="register.html">注册</a>
+				<div class="split"></div>
+				<a class="attitude">严选态度</a>
+				<div class="split"></div>
+				<a class="attitude">企业采购</a>
+				<div class="split"></div>
+				<div class="m-dropdown m-hdAppDownload">
+					<a class="trigger j-downloadlink"  >	
+						<span class="txt">下载APP</span>
+						<i class="icon w-icon-normal icon-normal-phone-app"></i>
+					</a>
+					<div class="bd ">
+						<div class="wrap ">
+							<div class="QRcode j-qrcode ">
+								<img src="./img/1.png"/>
+							</div>						
+							<span class="txt ">扫码下载 首单立减8元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="js-funcTabWrap " style="height: 204px; ">
+		<div id="js-funcTab" class="m-funcTab">
+			<div class="g-row ">
+				<a class="j-tab-logo tab-logo" title="网易严选 "></a>
+				<div class="tab-inner ">
+					<!-- 输入搜索框 -->
+						<div class="m-search ">
+							<a class="w-button-cart j-button-cart " >
+								<i class="w-icon-normal icon-normal-blackcart"></i>
+								<i class="w-icon-normal icon-normal-badge j-cart-num">0</i>
+							</a>
+							<div class="m-searchInput " id="j-search ">
+								<div class=" w-button-search j-searchButton " >
+									<i class="w-icon-normal icon-normal-search "></i>
+								</div>
+								<input id="topSearchInput" type="text" placeholder="膳魔师制造商保温杯仅3折 " class="w-searchInput j-searchInput " />
+				<div id="j-placeholderwarp "></div>
+				<div class="m-ppnl f-hide j-searchSuggest ">				
+					<div class="ppnl-ct js-ppnl-ct ">
+						<div class="js-ppnl-content ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- 菜单导航 -->
+						<ul class="tab-nav">
+		<li class="nav-item active first ">
+					<a class="topLevel " title="首页 " href="index.html">首页</a>
+				</li>
+		<li class="j-nav-item nav-item ">
+					<a class="topLevel " href="listgood.html" title="居家 ">居家</a>
+					<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+						<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+							<ul class="card-list topnav1"></ul>
+						</div>
+					</div>
+				</li>
+		<li class="j-nav-item nav-item ">
+			<a class="topLevel ">餐厨</a>
+			<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+			<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+			<ul class="card-list topnav2"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">		
+		<a class="topLevel " href=" " title="配件 ">配件</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav3"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >服装</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav4"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " href="h " title="洗护 ">洗护</a>
+		<div class="j-nav-dropdown nav-dropdown ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav5"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >婴童</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav6"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >杂货</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav7"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel ">饮食</a>
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav8"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >其他</a>
+
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav9"></ul>
+				</div>
+			</div>
+		</li>
+			<li class="split fixed-hide "></li>
+			<li class="nav-item fixed-hide "><a class="topLevel " >专题</a></li>
+			<li class="nav-item fixed-hide last "><a class="topLevel " >甄选家</a></li>
+		</ul>
+					<!-- 购物车图标 -->
+					<a class="w-cart j-cart " >
+						<i class="w-icon-normal icon-normal-blackcart "></i>
+						<i class="w-icon-normal icon-normal-badge j-cart-num j-cart-num2 ">0</i>
+					</a>
+					
+				</div>
+					<div class="notLogin ">
+						<a class="login j-topLogin "href="login.html" >登录</a>
+						<a class="register j-topRegister" href="register.html">注册</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="g-bd ">
+<div class="m-focus ">
+<div class="focus-bd ">
+<div id="js-focusSlick " class="js-slick m-focusSlick slick-initialized slick-slider ">
+	<!-- 大轮播图 -->
+		<div aria-live="polite " class="slick-list draggable ">
+		<div class="slick-track " role="listbox " style="opacity: 1; width: 7115px; ">					
+			<div class="item f-imgCenterBanner slick-slide " style="width: 1423px; position: relative; left: 0px; top: 0px; ">
+				<a class="wrap">
+					<img class="js-img " src="./img/afb1a936b4707b2af52120f5b9477927.jpg " >
+				</a>
+			</div>			
+			<div class="item f-imgCenterBanner slick-slide" style="width: 1423px; position: relative; left: -1423px; top: 0px; ">
+				<a class="wrap " >
+					<img class="js-img" src="./img/dea1388985783427735d75ecfdefe348.jpg " >
+				</a>
+			</div>			
+			<div class="item f-imgCenterBanner slick-slide " style="width: 1423px; position: relative; left: -2846px; top: 0px; ">
+				<a class="wrap">
+					<img class="js-img" src="./img/ab21dee522d15feeef51b59482cc78ab.jpg " >
+				</a>
+			</div>			
+			<div class="item f-imgCenterBanner slick-slide " style="width: 1423px; position: relative; left: -4269px; top: 0px; ">
+					<a class="wrap" >
+						<img class="js-img" src="./img/ad78bf32749db91598f77b836f4224e5.jpg " />
+					</a>
+				</div>				
+			<div class="item f-imgCenterBanner slick-slide " style="width: 1423px; position: relative; left: -5692px; top: 0px;">
+				<a class="wrap "  >
+					<img class="js-img " src="./img/fc9e0672aff1f3c2931593bc0d5f8cde.jpg"/>
+				</a>
+			</div>			
+		</div>
+	</div>
+
+<!--轮播缩略图-->
+		<div class="slick-dots-wrap " style="display: block; " role="toolbar ">
+	<ul class="slick-dots ">
+		<li class=" "  >
+			<span class="before "></span>
+			<a class="wrap " >
+				<img src="./img/afb1a936b4707b2af52120f5b9477927.jpg ">
+			</a>
+		</li>
+		<li  class=" ">
+			<span class="before "></span>
+			<a class="wrap "  >
+				<img src="./img/dea1388985783427735d75ecfdefe348.jpg ">
+			</a>
+		</li>
+		<li  class=" ">
+			<span class="before "></span>
+			<a class="wrap " >
+				<img src="./img/ab21dee522d15feeef51b59482cc78ab.jpg ">
+			</a>
+		</li>
+		<li class=" ">
+			<span class="before"></span>
+			<a class="wrap " >
+				<img src="./img/ad78bf32749db91598f77b836f4224e5.jpg ">
+			</a>
+		</li>
+		<li  class=" ">
+			<span class="before "></span>
+			<a class="wrap " >
+				<img src="./img/fc9e0672aff1f3c2931593bc0d5f8cde.jpg ">
+			</a>	
+		</li>	
+	</ul>	
+</div>
+	</div>
+</div>
+<div class="focus-ft ">
+		<div class="g-row ">
+	<ul class="m-ensure ">	
+		<li class="item ">
+				<div class="w-ensureItem ">
+					<i class="w-icon-normal icon-normal-ensureItem1 icon "></i>
+					<span class="txt ">品牌制造直连</span>
+				</div>
+		</li>
+			
+		<li class="item ">
+			<div class="w-ensureItem ">
+				<i class="w-icon-normal icon-normal-ensureItem2 icon "></i>
+				<span class="txt ">工艺国际认证</span>
+			</div>
+		</li>
+		
+		<li class="item "> 
+			<div class="w-ensureItem ">
+				<i class="w-icon-normal icon-normal-ensureItem3 icon "></i>
+				<span class="txt ">材料天然安全</span>
+			</div>
+		</li>
+		
+		<li class="item last "> 
+		<div class="w-ensureItem ">
+			<i class="w-icon-normal icon-normal-ensureItem4 icon "></i>
+			<span class="txt ">产业源头把控</span>
+		</div>
+	</li>
+	</ul>
+</div>
+</div>
+</div>
+<div class="m-manufacturer ">
+	<div class="g-row ">
+		<div class="m-cate ">
+			<header class="hd ">
+			<div class="left ">			
+				<h3 class="name ">品牌制造商</h3>			
+				<small class="frontName ">工厂直达消费者，剔除品牌溢价</small>
+			</div>
+			<div class="right ">
+				<a class="moreItems " >更多制造商 &gt;</a>								
+			</div>
+		</header>
+			<div class="bd ">
+				<div class="manufacturerList ">					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="m-newItem ">
+	<div class="g-row ">
+		<div class="m-cate ">
+			<header class="hd ">
+				<div class="left ">
+					<h3 class="name ">新品首发</h3>
+					<small class="frontName ">周一周四上新，为你寻觅世间好物</small>
+				</div>
+				<div class="right ">
+					<a class="moreItems ">更多新品 &gt;</a>
+				</div>
+</header>
+<div class="bd ">
+<ul class="itemList ">
+<div id="js-newItemSlick " class="js-newItemslick m-newItemSlick ">
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="m-popularItem ">
+<div class="g-row ">
+<div class="col ">
+<div class="smallBlock ">
+<div class="title ">
+</div>
+</div>
+<div class="bigBlock topGap ">
+<div class="m-product ">
+<div class="hd ">
+<a >
+<img class="img j-lazyload " src="./img/31a231e17f9cd8441037db29bb43c410.png " style="display: inline; ">
+</a>
+</div>
+<div class="bd ">
+<h4>
+<a >
+<span class="name ">2双装&nbsp;&nbsp;皮毛一体鞋垫</span><br>
+<span class="price ">¥59</span>
+</a>
+</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="col middle ">
+<div class="bigBlock ">
+<div class="m-product ">
+<div class="hd ">
+<a >
+<img class="img j-lazyload "   src="./img/65a372715d3cda19e34549f11d04fc69.png " style="display: inline; ">
+</a>
+</div>
+<div class="bd ">
+<h4>
+<a >
+<span class="name ">3色可选&nbsp;&nbsp;密吸式马桶圈垫</span><br>
+<span class="price ">¥19</span>
+</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="smallBlock topGap ">
+<div class="m-product ">
+<div class="hd ">
+<a >
+<img class="img j-lazyload "  src="./img/8a3140409066cba3709996c0e7aef2d3.png " style="display: inline; ">
+</a>
+</div>
+<div class="bd ">
+<h4>
+<a >
+<span class="name ">2色可选&nbsp;&nbsp;圣诞限量 寒星马克杯</span><br>
+<span class="price ">¥69</span>
+</a>
+</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="col last ">
+<div class="smallBlock ">
+<div class="m-product ">
+<div class="hd ">
+<a >
+<img class="img j-lazyload " src="./img/705b9f19fa52505a352a8303335ef180.png " style="display: inline; ">
+</a>
+</div>
+<div class="bd ">
+<h4>
+<a >
+<span class="name ">4色可选&nbsp;&nbsp;日式简约纯色舒棉绒拖鞋</span><br>
+<span class="price ">¥39</span>
+</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="bigBlock topGap ">
+<div class="m-product ">
+<div class="hd ">
+<a >
+<img class="img j-lazyload " src="./img/9f2cbe6fd6537699e1b0b02710884872.png " style="display: inline; ">
+</a>
+</div>
+<div class="bd ">
+<h4>
+<a >
+<span class="name ">雅致皮面年历本</span><br>
+<span class="price ">¥9.9</span>
+</a>
+</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="m-cates ">
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">居家</h3>
+<small class="frontName">回家，放松身心</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " href="listgood.html"><img src="./img/2.png " >被枕</a>
+<b class="spilt ">/</b>
+<a class="item "><img src="./img/3.png ">床品件套</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/4.png ">床垫</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/5.png " >地垫</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/6.png " >家具</a>
+<b class="spilt ">/</b>
+<a class="item "  ><img src="./img/7.png " >舒坐</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/8.png " >灯具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/9.png " >家饰</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli10">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多居家好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">餐厨</h3>
+<small class="frontName ">爱，囿于厨房</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/10.png " >锅具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/11.png " >刀铲</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/12.png " >功能厨具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/13.png">餐具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/14.png">杯壶</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/15.png">茶具</a>
+<b class="spilt ">/</b>
+<a class="item"><img src="./img/16.png">置物保鲜</a>
+<b class="spilt">/</b>
+<a class="item"><img src="./img/17.png " >清洁</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli9">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多餐厨好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">配件</h3>
+<small class="frontName ">配角，亦是主角</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/18.png " >功能箱包</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/19.png " >双肩包</a>
+<b class="spilt ">/</b>
+<a class="item " >
+<img src="./img/20.png " >单肩包</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/21.png " >鞋</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/22.png " >靴</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/23.png " >拖鞋</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/24.png " >围巾件套</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/25.png " >配饰</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli8">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多配件好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">服装</h3>
+<small class="frontName ">贴身的，要亲肤</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/26.png " >内裤</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/27.png " >内衣</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/28.png ">袜子</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/29.png " >外衣</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/30.png " >家居服</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/31.png " >衬衫</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/32.png " >T恤</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli7">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多服装好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">洗护</h3>
+<small class="frontName ">亲肤之物，严选天然</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/33.png ">毛巾</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/34.png " >香薰</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/35.png " >美妆</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/36.png " >护肤</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/37.png " >镜梳</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/38.png " >洗浴</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/39.png " >用具</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli6">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多洗护好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">婴童</h3>
+<small class="frontName ">爱，从心开始</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/40.png ">服饰</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/41.png " >妈咪</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/42.png " >寝居</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/43.png " >玩具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/44.png " >用品</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/45.png " >喂养</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli5"></ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore ">
+<span class="text ">更多婴童好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">杂货</h3>
+<small class="frontName ">解忧，每个烦恼</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/46.png " >文具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/47.png " >收纳</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/48.png " >旅行</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/49.png " >雨具</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/50.png " >口罩</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli4">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多杂货好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">饮食</h3>
+<small class="frontName ">好吃，无添加</small>
+</div>
+<div class="right ">
+<nav class="subCateList ">
+<a class="item " ><img src="./img/51.png " >小食</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/52.png " >糕点</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/53.png " >炒货</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/54.png " >冲饮</a>
+<b class="spilt ">/</b>
+<a class="item " ><img src="./img/55.png " >食材</a>
+</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli3">
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多饮食好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+<div class="g-row ">
+<div class="m-cate ">
+<header class="hd ">
+<div class="left ">
+<h3 class="name ">其他</h3>
+<small class="frontName ">挑选，你的生活</small>
+</div>
+<div class="right ">
+	<nav class="subCateList ">
+		<a class="item " ><img src="./img/56.png " >日本</a>
+		<b class="spilt ">/</b>
+		<a class="item " ><img src="./img/57.png " >节日礼盒</a>
+		<b class="spilt ">/</b>
+		<a class="item " ><img src="./img/58.png " >宠物</a>
+		<b class="spilt ">/</b>
+		<a class="item " ><img src="./img/59.png " >户外</a>
+		<b class="spilt ">/</b>
+		<a class="item " ><img src="./img/60.png " >夏日甜心</a>
+	</nav>
+</div>
+</header>
+<div class="bd ">
+<ul class="itemList botli2">
+	
+</ul>
+</div>
+<footer class="ft ">
+<a class="w-ftMore " >
+<span class="text ">更多其他好物</span>
+<i class="w-icon-normal icon-normal-ftMore icon "></i>
+</a>
+</footer>
+</div>
+</div>
+</div>
+<div class="m-newComment ">
+	<div class="g-row ">
+	<div class="m-cate ">
+		<header class="hd ">
+			<div class="left ">
+					<h3 class="name ">大家都在说</h3><small class="frontName "></small>				
+			</div>
+			<div class="right ">
+				<div class="j-comment-arrow newItemArrow ">
+						<i >更多</i>
+						<i class="w-icon-normal icon-normal-right-carousel j-nextArrow "></i>
+				</div>
+			</div>
+		</header>
+<div class="bd ">
+	<ul class="itemList ">
+		<div id="js-CommentSlick " class="js-CommentSlick m-newItemSlick slick-initialized slick-slider ">
+			<div aria-live="polite " class="slick-list draggable ">
+				<div class="slick-track " id="botli" role="listbox " style="opacity: 1; width: 100%; 
+					">
+					
+				</div>
+			</div>
+		</div>
+	</ul>
+</div>
+			</div>
+	</div>
+	</div>
+</div>
+<!--脚部-->
+<footer class="g-ft ">
+<div class="m-ft1 ">
+<div class="g-row ">
+<div class="item "><div class="m-serviceTel ">
+<h4 class="hd ">客服电话</h4>
+<p class="phone ">400-0368-163</p>
+<p class="datetime ">9:00-22:00</p>
+<a id="j-feedback " class="w-button btn feedbackBtn " href="javascript:; ">用户反馈</a>
+</div>
+</div>
+<div class="item ">
+<div class="m-whatIsYX ">
+<h4 class="hd ">何为严选</h4>
+<p class="desc ">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控...</p>
+<div class="m-followUs ">
+	<p class="title ">关注我们&nbsp;:</p>
+<div class="m-focusList ">
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-yixin "></i>
+		<div class="bd "><div class="wrap "><img src="./img/0a2.png " ></div></div>					
+	</div>
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-weixin "></i>
+		<div class="bd ">
+			<div class="wrap "><img src="./img/0a3.png " ></div>
+		</div>
+	</div>
+	<a class="f-left " ><i class="w-icon-normal icon-normal-weibo "></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="item "><div class="m-ftAppDownload ">
+<h4 class="hd ">扫码下载严选APP</h4>
+<div class="m-qrcode j-qrcode "><img src="./img/aa.png " /></div>
+<div class="tip ">首单立减8元</div>
+</div>
+</div>
+</div>
+</div>
+<div class="m-ft2 ">
+<div class="g-row ">
+<ul class="m-siteEnsure ">
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft1 "></i><p class="text ">30天无忧退货</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft2 "></i><p class="text ">满88元免邮费</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft3 "></i><p class="text ">网易品质保证</p></div>
+</li>
+</ul>
+<hr>
+<div class="m-siteInfo ">
+<nav class="nav ">
+	<a class="text ">关于我们</a>
+	<b class="split ">|</b>
+	<a class="text " >帮助中心</a>
+	<b class="split ">|</b>
+	<a class="text " >售后服务</a>
+	<b class="split ">|</b>
+	<a class="text " >配送与验收</a>
+	<b class="split ">|</b>
+	<a class="text " >商务合作</a>
+	<b class="split ">|</b>
+	<a class="text " >企业采购</a>
+	<b class="split ">|</b>
+	<a class="text ">1元夺宝</a>
+</nav>
+<p class="copyright ">网易公司版权所有 © 1997-2016 &nbsp; 食品经营许可证：JY13301080111719</p>
+</div>
+</div>
+</div>
+<div id="js-fixedtool " class="m-fixedtool-newuser" style="right: 86.5px; display:block; ">
+	<a class="activityEntry j-fixedToolActivity " >
+		<img class="activityPic " src="./img/0a1.jpg ">
+	</a>
+	<a class="newuser  j-newuser" style="display:block;">
+		<i></i>
+		<p class="text ">新人有礼</p>
+	</a>
+	<a class="download j-downloadlink " >
+	<i></i>
+	<p class="text ">下载APP</p>
+	<div class="qrCode ">
+		<div class="img j-qrcode "></div>
+		<span class="text ">首单立减8元</span>
+	</div>
+	</a>
+	<div id="js-fixedtoolCustomerService " class="customerService ">
+		<i></i>
+		<p class="text ">在线客服</p>
+	</div>
+	<div id="js-fixedtoolGoTop " class="goTop ">
+		<i></i>
+		<p class="text ">回顶部</p>
+	</div>
+</div>
+</footer>
+</body>
+</html>

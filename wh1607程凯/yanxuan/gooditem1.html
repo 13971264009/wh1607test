@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html class="js rgba opacity cssanimations borderradius boxshadow csstransitions csstransforms textshadow">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" href="./css/detail.css">
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/index_js.js"></script>	
+</head>
+	<body>
+		<!-- 头部 -->
+<header class="g-hd" id="gTopbar">
+	<!-- 顶部导航 -->
+	<div id="j-siteNav" class="m-siteNav">
+		<div class="g-row">
+			<p class="declare">好的生活，没那么贵</p>
+			<div class="right">
+				<a class="login j-topLogin" href="login.html">登录</a>
+				<a class="register j-topRegister" href="register.html">注册</a>
+				<div class="split"></div>
+				<a class="attitude">严选态度</a>
+				<div class="split"></div>
+				<a class="attitude">企业采购</a>
+				<div class="split"></div>
+				<div class="m-dropdown m-hdAppDownload">
+					<a class="trigger j-downloadlink"  >	
+						<span class="txt">下载APP</span>
+						<i class="icon w-icon-normal icon-normal-phone-app"></i>
+					</a>
+					<div class="bd ">
+						<div class="wrap ">
+							<div class="QRcode j-qrcode ">
+								<img src="./img/1.png"/>
+							</div>						
+							<span class="txt ">扫码下载 首单立减8元</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="js-funcTabWrap " style="height: 204px; ">
+		<div id="js-funcTab" class="m-funcTab">
+			<div class="g-row ">
+				<a class="j-tab-logo tab-logo" title="网易严选 "></a>
+				<div class="tab-inner ">
+					<!-- 输入搜索框 -->
+						<div class="m-search ">
+							<a class="w-button-cart j-button-cart " >
+								<i class="w-icon-normal icon-normal-blackcart"></i>
+								<i class="w-icon-normal icon-normal-badge j-cart-num">0</i>
+							</a>
+							<div class="m-searchInput " id="j-search ">
+								<div class=" w-button-search j-searchButton " >
+									<i class="w-icon-normal icon-normal-search "></i>
+								</div>
+								<input id="topSearchInput" type="text" placeholder="膳魔师制造商保温杯仅3折 " class="w-searchInput j-searchInput " />
+				<div id="j-placeholderwarp "></div>
+				<div class="m-ppnl f-hide j-searchSuggest ">				
+					<div class="ppnl-ct js-ppnl-ct ">
+						<div class="js-ppnl-content ">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					<!-- 菜单导航 -->
+						<ul class="tab-nav">
+		<li class="nav-item active first ">
+					<a class="topLevel " title="首页 " href="index.html">首页</a>
+				</li>
+		<li class="j-nav-item nav-item ">
+					<a class="topLevel " href="listgood.html" title="居家 ">居家</a>
+					<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+						<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+							<ul class="card-list topnav1"></ul>
+						</div>
+					</div>
+				</li>
+		<li class="j-nav-item nav-item ">
+			<a class="topLevel ">餐厨</a>
+			<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+			<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+			<ul class="card-list topnav2"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">		
+		<a class="topLevel " href=" " title="配件 ">配件</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav3"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >服装</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav4"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " href="h " title="洗护 ">洗护</a>
+		<div class="j-nav-dropdown nav-dropdown ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav5"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >婴童</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav6"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >杂货</a>
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav7"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel ">饮食</a>
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav8"></ul>
+		</div>
+		</div>
+		</li>
+		<li class="j-nav-item nav-item ">
+		<a class="topLevel " >其他</a>
+
+
+		<div class="j-nav-dropdown nav-dropdown " style="display: none; ">
+		<div class="j-nav-cateCard nav-cateCard " style="width: 1423px; left: -711.5px; ">
+		<ul class="card-list topnav9"></ul>
+				</div>
+			</div>
+		</li>
+			<li class="split fixed-hide "></li>
+			<li class="nav-item fixed-hide "><a class="topLevel " >专题</a></li>
+			<li class="nav-item fixed-hide last "><a class="topLevel " >甄选家</a></li>
+		</ul>
+					<!-- 购物车图标 -->
+					<a class="w-cart j-cart " >
+						<i class="w-icon-normal icon-normal-blackcart "></i>
+						<i class="w-icon-normal icon-normal-badge j-cart-num j-cart-num2 ">0</i>
+					</a>
+					
+				</div>
+					<div class="notLogin ">
+						<a class="login j-topLogin "href="login.html" >登录</a>
+						<a class="register j-topRegister"href="register.html" >注册</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</header>	
+<div class="g-detail">
+			<div class="g-bd">
+				<div class="m-crumbs">
+					<a >首页</a>
+					<span class="w-icon w-icon-arrow"></span>
+					<a >居家</a>
+					<span class="w-icon w-icon-arrow"></span>
+					<a >被枕</a>
+					<span class="w-icon w-icon-arrow"></span>
+					<span class="z-cur">秋冬保暖加厚澳洲羊毛被</span>
+				</div>
+			</div>
+			<div class="g-bd">
+				<div class="m-detail">
+					<div class="detail-top">
+						<div class="bigImgShow">
+							<img src="./img/good0.png" />
+						</div>
+						<div class="slide">
+							<div class="view">
+								<div class="shadow"></div>
+								<img class="j-thumb" src="./img/good0.png" >
+							</div>
+							<div class="list j-sthumbs">
+								<ul>
+									<li class="z-active">
+										<a href="javascript:;"><img src="./img/66425d1ed50b3968fed27c822fdd32e0.png" alt="鼠标悬停切换"></a>
+									</li>
+									<li class="">
+										<a href="javascript:;"><img src="./img/b7e3438c473a296a7e9feecbd4139af5(1).jpg" alt="鼠标悬停切换"></a>
+									</li>
+									<li class="">
+										<a href="javascript:;"><img src="./img/70422011e5a9855a0723c9c08d0cbbb0.jpg" alt="鼠标悬停切换"></a>
+									</li>
+									<li class="">
+										<a href="javascript:;"><img src="./img/f65dbb00aff8b43be02f2c8104208877.jpg" alt="鼠标悬停切换"></a>
+									</li>
+									<li class="">
+										<a href="javascript:;"><img src="./img/85e8575c8e473a2f71054e9e36b1211c.jpg" alt="鼠标悬停切换"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<div class="intro">
+								<div class="name">aaaa秋冬保暖加厚澳洲羊毛被</div>
+								<div class="desc">上乘原料，100%澳洲羊毛</div>
+							</div>
+							<div class="price u-formctr">
+								<div class="field pBox j-preSell f-hide f-cb">
+									<span class="label label-1">预售价</span>
+									<span class="rp"><span class="rmb">¥</span><span class="num j-preSell-price">99999999.00</span></span>
+									
+									</span>
+								</div>
+								<div class="field pBox j-sell f-cb">
+									<span class="label label-1">售价</span>
+									<span class="rp"><span class="rmb">¥</span><span class="num j-retail-price">2.00</span></span>
+								</div>
+								<div class="field sale">
+									<span class="label label-2">促销</span>
+									<a class="firstLink j-huodong" >
+										<div class="activityType">准备圣诞</div>去圣诞树下领券最高省300元
+									</a>
+									<div class="moreList">
+										<div class="saleLink">
+											<div class="moreBox">
+												<a href="javascript:;" class="more">更多活动<i class="w-icon-normal icon-normal-down"></i></a>
+											</div>
+											<ul class="linkList">
+												<li class="lItem">
+													<a class="link j-huodong" >
+														<span class="activityType activityType-1">准备圣诞</span>去圣诞树下领券最高省300元
+													</a>
+												</li>
+												<li class="lItem">
+													<a class="link j-huodong" >
+														<span class="activityType activityType-1">准备圣诞</span>订单满129元送圣诞袜免单券
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div style="clear:both"></div>
+								</div>
+								<div class="field server">
+									<span class="label">服务</span>
+									<span class="sItem"><i class="w-icon-normal icon-normal-point "></i>30天无忧退货</span>
+									<span class="sItem"><i class="w-icon-normal icon-normal-point "></i>48小时快速退款</span>
+									<span class="sItem"><i class="w-icon-normal icon-normal-point "></i>满88元免邮</span>
+									<div style="clear:both"></div>
+								</div>
+							</div>
+							<div class="j-param">
+								<div class="param u-formctr">
+									<span class="name name-1">规格</span>
+									<div class="field field-1">
+										<ul class="m-tabs">  
+											<li class="tab tab-txt" > 
+												<span class="txt">200*230cm</span>												
+											</li>
+											<li class="tab tab-txt tab-sel" >
+												<span class="txt">220*240cm</span>												
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="number u-formctr">
+									<span class="name name-1">数量</span>
+									<div class="field">
+										<div class="j-numcount f-ib">
+											<div class="u-selnum">
+												<span class="j-reduce less z-dis  jian1">
+													<i class="hx"></i>
+												</span>
+												<input class="j-input aprice1" type="text" value="1"></input>
+												<span class="j-add more jia1">
+													<i class="hx"></i>
+													<i class="sx"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="btns">
+								<a class="btn w-button w-button-ghost w-button-xl
+j-btn-directBuy"><span>立即购买</span></a>
+								<a class="btn w-button w-button-primary w-button-xl
+j-btn-addcart"href="shoppingcar.html" ><span><i class="w-icon icon-cart-detail"></i>加入购物车</span></a>
+								<div class="w-collectZone nopCollect j-collectBtn" title="点击收藏">
+									<div class="zone-1">
+										<div class="top top-1">
+											<span class="w-icon-normal icon-normal-collectEpt"></span>
+										</div>
+										<div class="top top-2">
+											<span class="w-icon-normal icon-normal-collectFull"></span>
+										</div>
+									</div>
+									<div class="zone-2">
+										<div class="bottom bottom-1">
+											<p class="textOne">收藏</p>
+										</div>
+										<div class="bottom bottom-2">
+											<p class="textTwo">已收藏</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bd" style="margin-top: -20px;">
+						<div class="left">
+							<div class="detail-nav j-nav-tab">
+								<ul class="nav">
+									<li class="item item-active j-nav-item" data-con="j-nav-html">
+										<a >详情</a>
+									</li>
+									<li class="item j-nav-item" data-con="j-nav-comment">
+										<a >评价<span class="num">（600）</span></a>
+									</li>
+									<li class="bg"></li>
+								</ul>
+							</div>
+							<div class="detail-html j-nav-con j-nav-html">
+								<ul id="j-attrList" class="m-attrList" style="visibility: visible;">
+									<li class="item j-item">
+										<span class="name">填充物重量</span>
+										<span class="value">2000g/2300g</span>
+									</li>
+									<li class="item j-item">
+										<span class="name">尺寸</span>
+										<span class="value">200*230cm/220*240cm</span>
+									</li>
+									<li class="item j-item">
+										<span class="name">面料</span>
+										<span class="value">100%棉</span>
+									</li>
+									<li class="item j-item">
+										<span class="name">填充物</span>
+										<span class="value">100%羊毛</span>
+									</li>
+									<li class="item j-item" style="width: 100%; border-bottom-style: none;">
+										<span class="name">温馨提示</span>
+										<span class="value">1.经过碳化、清洗、梳理的天然羊毛被带会有少量味道，通风晾晒2-3天即可散去 2.为减少羊毛漂白等化学用品的处理时间，部分羊毛可能未完全脱色，轻微泛黄属羊毛原色，为正常现象。</span>
+									</li>
+								</ul>
+								<div class="j-itemDetail">
+									<p><img src="./img/c78ec6e16d8477525c0a59e3c9d847b8.jpg" style=""></p>
+									<p><img src="./img/294185760b75f364f6ed42784877e59c.jpg" style=""></p>
+									<p><img src="./img/2468d1851e29930cc3802f125da5d6e8.jpg"  style=""></p>
+									<p><img src="./img/0794791277945c1577776724778124f8.jpg" style=""></p>
+									<p><img src="./img/6973ca1e6f264620d5d25e581a0d623d.jpg"  style=""></p>
+									<p><img src="./img/26f01273c833c2ae75177a5c8d9310ef.jpg"  style=""></p>
+									<p><img src="./img/bf0207da5160588acf58d0f02ea9d360.jpg"  style=""></p>
+									<p><img src="./img/dbd5d5171a309344d05663952930441f.jpg"  style=""></p>
+									<p><img src="./img/e7a65ac0824fc1584c2f1943ed1eaed0.jpg" style=""></p>
+									<p><img src="./img/88871ed9eccf7fbdfccf7912bb8f9d21.jpg"  style=""></p>
+									<p><img src="./img/7aa0e4c0abeb157e231b17e91cfa8f02.jpg"  style=""></p>
+									<p><img src="./img/a38f897200e305e7b23d62431b9c4d18.jpg"  style=""></p>
+									<p><img src="./img/bb147c0e96cdac2d77ab4eef1785e99d.jpg"  style=""></p>
+									<p><img src="./img/c6a270f7aed68cfe74e66d720c776fca.jpg"  style=""></p>
+									<p><img src="./img/c2c0b548be17f620db8afbe039a99452.jpg"  style=""></p>
+									<p><img src="./img/155fe0023e17bac4af486a6c1c098537.jpg"  style=""></p>
+									<p><img src="./img/8f1f120ca7e362595fd986ea6de8814f.jpg" style=""></p>
+									<p><img src="./img/6971f0333e0eeef7d9951edad068d4ec.jpg" style=""></p>
+									<p><img src="./img/c307630edf971e408938f1007169fa53.jpg" style=""></p>
+									<p><img src="./img/4ea2ba74fb518a298ef825c43ed634f4.jpg" style=""></p>
+									<p><br></p>
+								</div>
+								<div class="other">
+									<div class="tt">常见问题</div>
+									<div class="con">
+										<ul>
+											<li class="issue">
+												<div class="question">购买运费如何收取？</div>
+												<div class="answer">单笔订单金额（不含运费）满88元免邮费；不满88元，每单收取10元运费。</div>
+											</li>
+											<li class="issue">
+												<div class="question">使用什么快递发货？</div>
+												<div class="answer">严选使用顺丰快递发货（个别商品使用其他快递），配送范围覆盖全国大部分地区（港澳台地区除外）。</div>
+											</li>
+											<li class="issue">
+												<div class="question">如何申请退货？</div>
+												<div class="answer">1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同，预计1-5个工作日到账；<br>2.退货流程：<br>确认收货-申请退货-客服审核通过-客户商品寄回-仓库签收入库-退款完成<br>3.因网易严选产生的退货，如质量问题，退货邮费由网易严选承担，退款完成后会以现金券的形式报销；因客户个人原因产生的退货，购买和寄回运费由客户个人承担。</div>
+											</li>
+											<li class="issue">
+												<div class="question">如何开具发票？</div>
+												<div class="answer">1.如需开具发票，可在购买商品1个月内（以支付时间计算）联系客服，为该商品索取发票；<br>2.食品类商品可开具食品、饮料发票，非食品类商品可开具家居用品、日用品发票。</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="detail-comment j-nav-con j-nav-comment f-hide" id="nav-comment">
+								<ul class="m-commentList">
+									<li>
+										<div class="m-commentNav j-commentNav">
+											<div class="w-radio f-left active s-gold"><input class="radio" type="radio" name="commentCategory" id="allComment" value="0" checked="checked"><label for="allComment" class="ml3">全部（600）</label></div>
+											<div class="w-radio f-left ml40 s-gold  "><input class="radio" type="radio" name="commentCategory" id="picComment" value="1"><label for="picComment" class="ml3">有图（28）</label></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="m****5">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">m****5</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">喜欢</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:2公斤</span></div>
+												<div class="right">
+													<div class="createTime">2016-02-19 16:57</div>
+												</div>
+											</div>
+											<div id="1480942528816" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="g****o">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												<a class="w-icon-member member-comment-vip2" ></a>
+												<div class="username f-center">g****o</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">很贴身，很温暖，软软地包裹着身体，睡得特别舒服</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:2公斤</span></div>
+												<div class="right">
+													<div class="createTime">2015-12-04 11:35</div>
+												</div>
+											</div>
+											<div id="1480942528817" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/mail180x180.jpg" alt="g****u">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												<a class="w-icon-member member-comment-vip3" href="http://you.163.com/membership/index" title="品质生活家"></a>
+												<div class="username f-center">g****u</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">好用</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:200*230cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 14:16</div>
+												</div>
+											</div>
+											<div id="1480942528818" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="l****m">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">l****m</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">不错</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:220*240cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 14:05</div>
+												</div>
+											</div>
+											<div id="1480942528819" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="m****9">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">m****9</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">给妈妈买的</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:200*230cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 13:19</div>
+												</div>
+											</div>
+											<div id="1480942528820" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/8e5048720d58ccb8b3d5c436d2192750" alt="若****">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">若****</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">快递包装完好，被子盖着非常暖和，没有异味，很赞</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:200*230cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 12:31</div>
+												</div>
+											</div>
+											<div id="1480942528821" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="l****r">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">l****r</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">暖和</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:200*230cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 08:10</div>
+												</div>
+											</div>
+											<div id="1480942528822" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="y****6">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">y****6</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">很好
+											</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:200*230cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-05 07:57</div>
+												</div>
+											</div>
+											<div id="1480942528823" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/b3efe62522062903fae2b2e3d1e377df.jpg" alt="L****n">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+											
+												<div class="username f-center">L****n</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">很好，保暖。有地暖，盖着太热，还有就是有点太重了</div>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:220*240cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-04 21:42</div>
+												</div>
+											</div>
+											<div id="1480942528824" class="lightbox"></div>
+										</div>
+									</li>
+									<li class="item f-clearfix">
+										<div class="m-commentUser">
+											<div class="avatarWarp"><img src="./img/485ff1be6912be6ae696b6d360d1b101.png" alt="9****1">
+												<div class="mask w-icon-normal icon-normal-mask"></div>
+											</div>
+											<div class="username-withIcon">
+												
+												<div class="username f-center">9****1</div>
+											</div>
+										</div>
+										<div class="m-comment f-clearfix">
+											<div class="content">质量挺好的……</div>
+											<ul class="j-picList m-picList picList" data-target="1480942528825">
+												<li class="item">
+													<div class="before"></div><img src="./img/f12c4cc8f54ca4d6c3b1f8c906edae8a.png"></li>
+											</ul>
+											<div class="meta">
+												<div class="skuInfo"><span class="mr20">规格:220*240cm</span></div>
+												<div class="right">
+													<div class="createTime">2016-12-04 14:36</div>
+												</div>
+											</div>
+											<div id="1480942528825" class="lightbox" style="display: none;">
+												<div class="m-lightbox">
+													<div class="close"></div>
+													<div class="j-slick slick slick-initialized slick-slider">
+														<div aria-live="polite" class="slick-list draggable">
+															<div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+																<div class="slide slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px;" tabindex="0" role="option" aria-describedby="slick-slide00"><img src="./img/f12c4cc8f54ca4d6c3b1f8c906edae8a.png" style="width: 473px; height: 438px;"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="comment-list j-nav-con j-nav-comment f-hide">
+								<div id="pager" class="m-pager m-hrz ">
+									<div class="m-wrap">
+										<a  hidefocus="true" class="w-linkicon pagel f-disabled" data-page="0">
+											<span class="w-icon icon-pagel icon-pagel_disabled"></span>
+											<span class="txt">上一页</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a  class="w-linkicon w-linkicon-selected" >
+											<span class="txt">1</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a  class="w-linkicon" >
+											<span class="txt ">2</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a   class="w-linkicon" >
+											<span class="txt ">3</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a class="w-linkicon" data-page="4">
+											<span class="txt ">4</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a class="w-linkicon" data-page="31">
+											<span class="txt ">...</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a  class="w-linkicon" data-page="60">
+											<span class="txt ">60</span>
+										</a>
+									</div>
+									<div class="m-wrap">
+										<a class="w-linkicon pager " data-page="2">
+											<span class="txt">下一页</span>
+											<span class="w-icon icon-pager  "></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<div class="m-topicsRecommended">
+								<header class="hd">
+									专题推荐
+								</header>
+								<div class="bd">
+									<ul class="j-subject">
+										<a  class="item" ></a>
+										<li class="item">
+											<a class="item" ></a>
+											<a class="m-topicRecommended" ><img width="260" height="140" src="./img/4e357f92cb7b03c542c1a27da7a50bad.jpg" alt="">
+												<div class="text">高颜值好物，晒出生活好品味</div>
+											</a>
+										</li>
+										<a class="item"></a>
+										<li class="item">
+											<a class="item" ></a>
+											<a  class="m-topicRecommended" ><img width="260" height="140" src="./img/edb41992a3724f2fc49993b0eabe86fa.jpg" >
+												<div class="text">12月篇 本月必买的好物</div>
+											</a>
+										</li>
+										<a class="item" ></a>
+										<li class="item">
+											<a  class="item"></a>
+											<a class="m-topicRecommended" ><img width="260" height="140" src="./img/a164a1f2fe248f81f5b1bf82233456e5.jpg" alt="">
+												<div class="text">治愈冬日选择综合症</div>
+											</a>
+										</li>
+										<a  class="item" ></a>
+										<li class="item">
+											<a class="item" ></a>
+											<a  class="m-t><img width="260" height="140" src="./img/6a2e378049db126314d1a54a60766f85.jpg" alt="">
+												<div class="text">聪明爸妈の育儿进阶指南</div>
+											</a>
+										</li>
+										<a  class="item" ></a>
+										<li class="item">
+											<a class="item" ></a>
+											<a class="m-topicRecommended" ><img width="260" height="140" src="./img/606057f6da92f3b106df77def1a661c4.jpg" >
+												<div class="text">严选Lofter设计票选</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<form >
+				<input type="hidden" name="orderCart">
+			</form>
+		</div>
+
+
+
+
+<footer class="g-ft ">
+<div class="m-ft1 ">
+<div class="g-row ">
+<div class="item "><div class="m-serviceTel ">
+<h4 class="hd ">客服电话</h4>
+<p class="phone ">400-0368-163</p>
+<p class="datetime ">9:00-22:00</p>
+<a id="j-feedback " class="w-button btn feedbackBtn " href="javascript:; ">用户反馈</a>
+</div>
+</div>
+<div class="item ">
+<div class="m-whatIsYX ">
+<h4 class="hd ">何为严选</h4>
+<p class="desc ">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控...</p>
+<div class="m-followUs ">
+	<p class="title ">关注我们&nbsp;:</p>
+<div class="m-focusList ">
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-yixin "></i>
+		<div class="bd "><div class="wrap "><img src="./img/0a2.png " ></div></div>					
+	</div>
+	<div class="m-dropdown m-dropdown-2d f-left ">
+		<i class="w-icon-normal icon-normal-weixin "></i>
+		<div class="bd ">
+			<div class="wrap "><img src="./img/0a3.png " ></div>
+		</div>
+	</div>
+	<a class="f-left " ><i class="w-icon-normal icon-normal-weibo "></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="item "><div class="m-ftAppDownload ">
+<h4 class="hd ">扫码下载严选APP</h4>
+<div class="m-qrcode j-qrcode "><img src="./img/aa.png " /></div>
+<div class="tip ">首单立减8元</div>
+</div>
+</div>
+</div>
+</div>
+<div class="m-ft2 ">
+<div class="g-row ">
+<ul class="m-siteEnsure ">
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft1 "></i><p class="text ">30天无忧退货</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft2 "></i><p class="text ">满88元免邮费</p></div>
+</li>
+<li class="item ">
+	<div class="inner "><i class="icon w-icon-normal icon-normal-ft3 "></i><p class="text ">网易品质保证</p></div>
+</li>
+</ul>
+<hr>
+<div class="m-siteInfo ">
+<nav class="nav ">
+	<a class="text ">关于我们</a>
+	<b class="split ">|</b>
+	<a class="text " >帮助中心</a>
+	<b class="split ">|</b>
+	<a class="text " >售后服务</a>
+	<b class="split ">|</b>
+	<a class="text " >配送与验收</a>
+	<b class="split ">|</b>
+	<a class="text " >商务合作</a>
+	<b class="split ">|</b>
+	<a class="text " >企业采购</a>
+	<b class="split ">|</b>
+	<a class="text ">1元夺宝</a>
+</nav>
+<p class="copyright ">网易公司版权所有 © 1997-2016 &nbsp; 食品经营许可证：JY13301080111719</p>
+</div>
+</div>
+</div>
+<div id="js-fixedtool " class="m-fixedtool-newuser" style="right: 86.5px; display:block; ">
+	<a class="activityEntry j-fixedToolActivity " >
+		<img class="activityPic " src="./img/0a1.jpg ">
+	</a>
+	<a class="newuser  j-newuser" style="display:block;">
+		<i></i>
+		<p class="text ">新人有礼</p>
+	</a>
+	<a class="download j-downloadlink " >
+	<i></i>
+	<p class="text ">下载APP</p>
+	<div class="qrCode ">
+		<div class="img j-qrcode "></div>
+		<span class="text ">首单立减8元</span>
+	</div>
+	</a>
+	<div id="js-fixedtoolCustomerService " class="customerService ">
+		<i></i>
+		<p class="text ">在线客服</p>
+	</div>
+	<div id="js-fixedtoolGoTop " class="goTop ">
+		<i></i>
+		<p class="text ">回顶部</p>
+	</div>
+</div>
+</footer>
+<!--固定点击-->
